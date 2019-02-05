@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('sh how to') {
         steps {
-            sh 'echo "Start Process"'
+            docker info
         }
     }
     stage('Build') {
