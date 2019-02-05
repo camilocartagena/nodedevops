@@ -12,7 +12,7 @@ pipeline {
   stages {
     stage('sh how to') {
         steps {
-            sh 'ls -l'
+            sh 'echo "Start Process"'
         }
     }
     stage('Build') {
