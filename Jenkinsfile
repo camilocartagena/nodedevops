@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Run tests') {
       steps {
-        sh "docker run ${dockerImage.id} npm test"
+        bat "docker run ${dockerImage.id} npm test"
       }
     }
     stage('Publish') {
