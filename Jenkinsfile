@@ -10,6 +10,11 @@ pipeline {
   }
 
   stages {
+    stage('sh how to') {
+        steps {
+            sh 'ls -l'
+        }
+    }
     stage('Build') {
       steps {
         script {
